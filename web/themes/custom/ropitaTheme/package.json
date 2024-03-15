@@ -1,0 +1,23 @@
+{
+  "name": "ropita_theme",
+  "version": "1.0.0",
+  "description": "ropitaTheme for Drupal 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin C.",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

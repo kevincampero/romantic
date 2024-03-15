@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//NAVBAR
+.principal-navbar {
+	padding: 0 5% !important;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+
+	@media (max-width: 500px) {
+		padding: 0;
+	}
+
+	img {
+		width: 200px;
+	}
+
+	.search-block-form {
+		form {
+			display: flex;
+
+			@media (max-width: 500px) {
+				display: none;
+			}
+
+			input[type=search] {
+				border: solid 0.1px;
+				height: 40px;
+				padding: 5px;
+				min-width: 250px;
+			}
+
+			.button {
+				height: 100%;
+				background: #d71757;
+				color: white;
+				border: none;
+				min-width: 90px;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	ul {
+
+		//border: solid red;
+		li {
+			//border: solid green;
+			margin: 0 15px;
+
+			a {
+				text-decoration: none;
+				color: black;
+				font-family: "Kanit", sans-serif;
+				font-weight: 400;
+				font-size: 18px;
+
+				&:hover {
+					color: #d71757;
+					text-decoration: underline;
+					transition: ease .2s;
+				}
+			}
+		}
+	}
+}
+
+//FOOTER
+.layout.layout--fourcol-section.footer-father {
+	background-color: #232629;
+	color: white;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+
+	.layout__region {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a{
+			color: white;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+				color: #d71757;
+			}
+		}
+	}
+}
+
+//BANNER PRINCIPAL
+#block-ropitatheme-bannerprincipal{
+	margin: 15px 0;
+	div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+//FORMULARIO DE CONTACTO
+.contact-form {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 3.5% 101px;
+    min-height: 69vh;
+  
+	.field--type-string,
+	.field--type-email,
+	.field--type-list-string {
+	  grid-column: span 1; // Todos los campos excepto el de Mensaje ocupan una columna
+	}
+  
+	.field--type-string-long {
+	  grid-column: span 2; // El campo de Mensaje ocupa dos columnas
+	}
+  	label {
+	  font-weight: bold;
+	}
+  
+	input[type="text"],
+	input[type="email"],
+	select,
+	textarea {
+	  width: 100%; // Ajustar el ancho de los campos de texto y de selección
+	  padding: 5px;
+	  margin-top: 5px;
+	}
+  
+	.form-actions {
+	  grid-column: span 2; // El contenedor de los botones ocupa dos columnas
+	  text-align: center; // Centrar los botones
+	}
+	#edit-submit{
+		background-color: #d71757;
+		border-radius: 5px;
+		color: white;
+		padding: 15px 20px;
+		width: 100%;
+		text-transform: uppercase;
+	}
+  }
+  
+//PÁGINA DE PRODUCTO
+#product-alone{
+	margin: 5% 100px;
+	.layout__region--first{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			width: 500px;
+   			height: auto;
+		}
+	}
+	.layout__region--second{
+		padding: 15px;
+		span{
+			color: #232629;
+    		font-size: 25px;
+    		font-weight: bold;
+		}
+		div{
+			font-size: 18px;
+			text-align: justify;
+		}
+	 
+		
+	}
+}

@@ -1,0 +1,12 @@
+name: ropitaTheme
+type: theme
+description: ropitaTheme for ecommerce site
+version: VERSION
+base theme: stable9
+core: 9.x
+core_version_requirement: ^9 || ^10
+
+libraries:
+  - ropitaTheme/global-styling
+  - ropitaTheme/global-scripts
+
