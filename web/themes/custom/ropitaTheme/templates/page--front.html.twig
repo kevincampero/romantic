@@ -51,6 +51,13 @@
     {{ page.header }}
   </header>
 
+  {#VERIFICATION OF TWIG DEBUG VARIABLE#}
+  {% if twig_debug and show_twig_message %}
+    <div class="alert alert-success">
+      {{ 'Twig debug is enabled'|t }}
+    </div>
+  {% endif %}
+
   {{ page.primary_menu }}
 
 
@@ -59,7 +66,7 @@
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">
