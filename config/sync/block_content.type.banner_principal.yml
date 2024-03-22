@@ -1,0 +1,8 @@
+uuid: b01919d2-6418-460c-8d43-8a277ea49b18
+langcode: es
+status: true
+dependencies: {  }
+id: banner_principal
+label: 'banner principal'
+revision: 0
+description: ''

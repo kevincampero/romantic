@@ -1,0 +1,123 @@
+uuid: b7425ceb-0388-48d4-8256-97b83abc18c3
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.field.contact_message.contacto.field_ciudad
+    - field.field.contact_message.contacto.field_correo_electronico
+    - field.field.contact_message.contacto.field_nombre_completo
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          6e92e368-2209-4378-a663-5ef816574e6b:
+            uuid: 6e92e368-2209-4378-a663-5ef816574e6b
+            region: first
+            configuration:
+              id: 'field_block:contact_message:contacto:field_nombre_completo'
+              label: 'Nombre Completo'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          337811c4-5f54-4142-8961-831a9989113f:
+            uuid: 337811c4-5f54-4142-8961-831a9989113f
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_ciudad'
+              label: Ciudad
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          f12a769e-4eb7-4afc-acac-2fc0d9a03eac:
+            uuid: f12a769e-4eb7-4afc-acac-2fc0d9a03eac
+            region: content
+            configuration:
+              id: 'field_block:contact_message:contacto:message'
+              label: Mensaje
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: contact_message.contacto.default
+targetEntityType: contact_message
+bundle: contacto
+mode: default
+content:
+  field_ciudad:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_correo_electronico:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nombre_completo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  message:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

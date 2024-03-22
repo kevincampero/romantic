@@ -1,0 +1,11 @@
+uuid: 643955be-a093-4add-9105-039b852e7e90
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.genero_dirigido
+id: taxonomy_term.genero_dirigido
+target_entity_type_id: taxonomy_term
+target_bundle: genero_dirigido
+default_langcode: site_default
+language_alterable: false

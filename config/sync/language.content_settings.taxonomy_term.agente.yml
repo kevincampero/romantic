@@ -1,0 +1,11 @@
+uuid: 773b1702-b24f-458e-8ad2-d17cec6c28d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.agente
+id: taxonomy_term.agente
+target_entity_type_id: taxonomy_term
+target_bundle: agente
+default_langcode: site_default
+language_alterable: false

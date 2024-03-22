@@ -1,0 +1,15 @@
+uuid: a24ac268-48cc-4b4d-8b9e-930175e5695f
+langcode: es
+status: true
+dependencies: {  }
+name: banner_panoramico_1440
+label: 'banner panorámico 1440'
+effects:
+  38a0b2b0-f193-4774-a853-0eebe0d5efeb:
+    uuid: 38a0b2b0-f193-4774-a853-0eebe0d5efeb
+    id: image_scale
+    weight: 1
+    data:
+      width: 1440
+      height: null
+      upscale: true

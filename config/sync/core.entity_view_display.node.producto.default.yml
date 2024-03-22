@@ -1,0 +1,258 @@
+uuid: 3bfe0d4b-52bc-4171-8c87-c63fdab7d284
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.producto.title
+    - field.field.node.producto.field_agente
+    - field.field.node.producto.field_descripcion_de_producto
+    - field.field.node.producto.field_estacion_relacionada
+    - field.field.node.producto.field_genero_dirigido
+    - field.field.node.producto.field_imagenes_de_producto
+    - field.field.node.producto.field_precio_de_producto
+    - field.field.node.producto.field_tipo_de_vestimenta
+    - node.type.producto
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          1247e16b-8fc1-4760-95c3-27a67998f084:
+            uuid: 1247e16b-8fc1-4760-95c3-27a67998f084
+            region: first
+            configuration:
+              id: 'field_block:node:producto:field_imagenes_de_producto'
+              label: 'Imagenes de producto'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          6a09316d-a593-499e-a6bb-2e39b80928d4:
+            uuid: 6a09316d-a593-499e-a6bb-2e39b80928d4
+            region: second
+            configuration:
+              id: 'field_block:node:producto:title'
+              label: 'Nombre producto'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          db7fa34c-cf73-433d-acf0-080f7306e07d:
+            uuid: db7fa34c-cf73-433d-acf0-080f7306e07d
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_precio_de_producto'
+              label: 'Precio de producto'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_decimal
+                label: hidden
+                settings:
+                  thousand_separator: ' '
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          f2c794c9-6f2a-47c1-a012-afa4996cff0d:
+            uuid: f2c794c9-6f2a-47c1-a012-afa4996cff0d
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_descripcion_de_producto'
+              label: 'Descripción de producto'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          2db3bc3d-f945-4fe2-8e3c-b1bfb1ef8b2a:
+            uuid: 2db3bc3d-f945-4fe2-8e3c-b1bfb1ef8b2a
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_tipo_de_vestimenta'
+              label: 'Tipo de vestimenta'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          103f0512-4d75-4de5-bbaf-2f412c481f9d:
+            uuid: 103f0512-4d75-4de5-bbaf-2f412c481f9d
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_genero_dirigido'
+              label: 'Género dirigido'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          0cb618d1-cfa8-4398-9b6f-f9a390c3a032:
+            uuid: 0cb618d1-cfa8-4398-9b6f-f9a390c3a032
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_estacion_relacionada'
+              label: 'Estación relacionada'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          cebb6aa9-9575-4080-a4ab-b51d194780cf:
+            uuid: cebb6aa9-9575-4080-a4ab-b51d194780cf
+            region: second
+            configuration:
+              id: 'field_block:node:producto:field_agente'
+              label: Agente
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.producto.default
+targetEntityType: node
+bundle: producto
+mode: default
+content:
+  field_agente:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: first
+  field_descripcion_de_producto:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_estacion_relacionada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_genero_dirigido:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_imagenes_de_producto:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_precio_de_producto:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_tipo_de_vestimenta:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: a321d0eb-657b-421f-8753-02e2b3ab0bc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.producto
+id: node.producto.promote
+field_name: promote
+entity_type: node
+bundle: producto
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

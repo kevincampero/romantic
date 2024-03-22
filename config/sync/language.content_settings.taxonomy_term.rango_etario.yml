@@ -1,0 +1,11 @@
+uuid: 803c7f0c-d4ec-425d-86dc-b00b25560df3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.rango_etario
+id: taxonomy_term.rango_etario
+target_entity_type_id: taxonomy_term
+target_bundle: rango_etario
+default_langcode: site_default
+language_alterable: false

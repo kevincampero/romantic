@@ -1,0 +1,21 @@
+uuid: d82c49dd-c68d-47b2-b1ce-8ac5e3832234
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.storage.contact_message.field_ciudad
+  module:
+    - options
+id: contact_message.contacto.field_ciudad
+field_name: field_ciudad
+entity_type: contact_message
+bundle: contacto
+label: Ciudad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

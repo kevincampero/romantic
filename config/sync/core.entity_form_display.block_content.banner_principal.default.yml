@@ -1,0 +1,38 @@
+uuid: dec10f80-9355-43f8-9a2d-df1ad84db020
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_principal
+    - field.field.block_content.banner_principal.field_imagen_promocional
+id: block_content.banner_principal.default
+targetEntityType: block_content
+bundle: banner_principal
+mode: default
+content:
+  field_imagen_promocional:
+    type: entity_reference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

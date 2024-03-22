@@ -1,0 +1,11 @@
+uuid: 381ea920-d420-466a-90c5-bab38a8cd825
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.producto
+id: node.producto
+target_entity_type_id: node
+target_bundle: producto
+default_langcode: site_default
+language_alterable: false

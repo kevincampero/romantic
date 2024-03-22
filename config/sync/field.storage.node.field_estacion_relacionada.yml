@@ -1,0 +1,20 @@
+uuid: 044fc790-9f93-4273-8767-0074f9544121
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_estacion_relacionada
+field_name: field_estacion_relacionada
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

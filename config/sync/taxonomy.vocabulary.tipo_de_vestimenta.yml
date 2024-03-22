@@ -1,0 +1,8 @@
+uuid: ea862f88-0ee4-4aef-88aa-07be29667fdf
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de vestimenta'
+vid: tipo_de_vestimenta
+description: 'Tipo de vestimenta catalogado por formalidad'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 3ec2c2b7-0421-4e5d-9d08-5b51e4209243
+langcode: es
+status: true
+dependencies: {  }
+name: 'Estación del año'
+vid: estacion_relacionada
+description: 'Producto categorizado por estación del año'
+weight: 0

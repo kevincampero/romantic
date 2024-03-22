@@ -1,0 +1,22 @@
+uuid: 578c2f4d-131a-43d5-b2ac-e23de3b5eafc
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_redes_sociales
+  module:
+    - text
+id: block_content.footer.field_redes_sociales
+field_name: field_redes_sociales
+entity_type: block_content
+bundle: footer
+label: 'redes sociales'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

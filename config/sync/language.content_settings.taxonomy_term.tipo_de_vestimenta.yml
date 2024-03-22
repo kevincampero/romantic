@@ -1,0 +1,11 @@
+uuid: ee682bc6-40fd-44e2-96d8-5bc36edec27d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_vestimenta
+id: taxonomy_term.tipo_de_vestimenta
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_vestimenta
+default_langcode: site_default
+language_alterable: false

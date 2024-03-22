@@ -1,0 +1,8 @@
+uuid: 543c6132-44d4-4293-8c6c-7f424be99b78
+langcode: es
+status: true
+dependencies: {  }
+name: Agente
+vid: agente
+description: 'agente de contacto para ventas'
+weight: 0

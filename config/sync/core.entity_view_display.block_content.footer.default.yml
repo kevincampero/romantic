@@ -1,0 +1,138 @@
+uuid: e1e99a6f-76a4-45d7-bb58-7753ab55e7dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.field.block_content.footer.field_informacion
+    - field.field.block_content.footer.field_logo
+    - field.field.block_content.footer.field_menu
+    - field.field.block_content.footer.field_redes_sociales
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_fourcol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          cbb27d69-230c-4588-be3f-80946f201554:
+            uuid: cbb27d69-230c-4588-be3f-80946f201554
+            region: first
+            configuration:
+              id: 'field_block:block_content:footer:field_logo'
+              label: logo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          fe960943-97be-4964-bf24-d100e0a98c62:
+            uuid: fe960943-97be-4964-bf24-d100e0a98c62
+            region: second
+            configuration:
+              id: 'field_block:block_content:footer:field_informacion'
+              label: Información
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          c3c0fc78-b6f3-47ff-bfc9-14cbb03e92d8:
+            uuid: c3c0fc78-b6f3-47ff-bfc9-14cbb03e92d8
+            region: third
+            configuration:
+              id: 'field_block:block_content:footer:field_menu'
+              label: menu
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7b6e46f6-a539-4716-8cac-a52b76021eb5:
+            uuid: 7b6e46f6-a539-4716-8cac-a52b76021eb5
+            region: fourth
+            configuration:
+              id: 'field_block:block_content:footer:field_redes_sociales'
+              label: 'redes sociales'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.footer.default
+targetEntityType: block_content
+bundle: footer
+mode: default
+content:
+  field_informacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_menu:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_redes_sociales:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: first
+hidden:
+  langcode: true

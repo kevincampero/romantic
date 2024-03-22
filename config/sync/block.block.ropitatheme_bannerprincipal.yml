@@ -1,0 +1,30 @@
+uuid: 33202f14-84b5-4670-9478-1c8dcff00555
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_principal:344469f3-9bc5-4232-929e-c5681da3dd04'
+  module:
+    - block_content
+    - system
+  theme:
+    - ropitaTheme
+id: ropitatheme_bannerprincipal
+theme: ropitaTheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:344469f3-9bc5-4232-929e-c5681da3dd04'
+settings:
+  id: 'block_content:344469f3-9bc5-4232-929e-c5681da3dd04'
+  label: 'Banner principal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

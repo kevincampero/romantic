@@ -1,0 +1,29 @@
+uuid: 16bb5269-63ff-4f62-b9e6-7adb15a0ffb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estacion_relacionada
+    - node.type.producto
+    - taxonomy.vocabulary.estacion_relacionada
+id: node.producto.field_estacion_relacionada
+field_name: field_estacion_relacionada
+entity_type: node
+bundle: producto
+label: 'Estación relacionada'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estacion_relacionada: estacion_relacionada
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 708e6e6b-aa76-4382-9fd4-45629d3cabde
+langcode: es
+status: true
+dependencies: {  }
+name: Género
+vid: genero_dirigido
+description: 'Género de hombre o mujer'
+weight: 0

@@ -1,0 +1,22 @@
+uuid: cf00cdbf-3024-451c-8026-893634c32d1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_informacion
+  module:
+    - text
+id: block_content.footer.field_informacion
+field_name: field_informacion
+entity_type: block_content
+bundle: footer
+label: Información
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

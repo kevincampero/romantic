@@ -1,0 +1,23 @@
+uuid: 5a477791-00ad-4280-8d4e-e4b02ec390f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_numero_de_celular
+    - taxonomy.vocabulary.agente
+id: taxonomy_term.agente.field_numero_de_celular
+field_name: field_numero_de_celular
+entity_type: taxonomy_term
+bundle: agente
+label: 'Número de celular'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

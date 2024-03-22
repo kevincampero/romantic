@@ -1,0 +1,29 @@
+uuid: b38dacfd-db99-4251-b8a2-f282728f565e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_agente
+    - node.type.producto
+    - taxonomy.vocabulary.agente
+id: node.producto.field_agente
+field_name: field_agente
+entity_type: node
+bundle: producto
+label: Agente
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      agente: agente
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

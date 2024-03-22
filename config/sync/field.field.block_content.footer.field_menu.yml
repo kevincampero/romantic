@@ -1,0 +1,26 @@
+uuid: 4de933b9-6151-4d75-8f47-3e0492292b56
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.footer
+    - field.storage.block_content.field_menu
+    - filter.format.basic_html
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.footer.field_menu
+field_name: field_menu
+entity_type: block_content
+bundle: footer
+label: menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: a3391ba2-2a80-4739-9c52-3f790b6d40b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_vestimenta
+    - node.type.producto
+    - taxonomy.vocabulary.tipo_de_vestimenta
+id: node.producto.field_tipo_de_vestimenta
+field_name: field_tipo_de_vestimenta
+entity_type: node
+bundle: producto
+label: 'Tipo de vestimenta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_vestimenta: tipo_de_vestimenta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,12 @@
+uuid: f20ffcf7-3d10-4ef5-99a4-d821592aeeb9
+langcode: es
+status: true
+dependencies: {  }
+id: contacto
+label: 'Información de contacto'
+recipients:
+  - kevincampero42@gmail.com
+reply: ''
+weight: 0
+message: 'Mensaje envíado correctamente'
+redirect: /contact/contacto

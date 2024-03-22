@@ -1,0 +1,8 @@
+uuid: 5ab6c70a-0f10-43e0-8cab-198087961ebd
+langcode: es
+status: true
+dependencies: {  }
+name: 'Rango etario'
+vid: rango_etario
+description: 'El rango hace referencia a las etapas de crecimiento a llegar de nuestros potenciales clientes'
+weight: 0

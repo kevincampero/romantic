@@ -1,0 +1,20 @@
+uuid: d42c58ae-5c9a-410e-bc89-223d33c7f5a0
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_precio_de_producto
+field_name: field_precio_de_producto
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

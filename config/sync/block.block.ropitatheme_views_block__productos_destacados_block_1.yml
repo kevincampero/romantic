@@ -1,0 +1,29 @@
+uuid: 90005fdc-de3a-48b6-a333-36894b24f46e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.productos_destacados
+  module:
+    - system
+    - views
+  theme:
+    - ropitaTheme
+id: ropitatheme_views_block__productos_destacados_block_1
+theme: ropitaTheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:productos_destacados-block_1'
+settings:
+  id: 'views_block:productos_destacados-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

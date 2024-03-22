@@ -1,0 +1,22 @@
+uuid: 14a07ae4-6bde-4824-899b-d1a96e7ec711
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: ropitaTheme_content
+theme: ropitaTheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

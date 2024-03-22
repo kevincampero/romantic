@@ -1,0 +1,25 @@
+uuid: abd5e241-9f2b-429f-a099-7cac1b0f5304
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:footer:d4ff2399-f7e5-4e91-8b56-af4462ab69b9'
+  module:
+    - block_content
+  theme:
+    - ropitaTheme
+id: ropitatheme_bloquedelfooter
+theme: ropitaTheme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:d4ff2399-f7e5-4e91-8b56-af4462ab69b9'
+settings:
+  id: 'block_content:d4ff2399-f7e5-4e91-8b56-af4462ab69b9'
+  label: 'bloque footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

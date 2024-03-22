@@ -1,0 +1,18 @@
+uuid: 4d984906-40f0-4b68-bd50-dba3dd624c34
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Producto
+type: producto
+description: 'productos para la venta y promoción dentro del sitio, se puede categorizar por género, tipo, estación, edad'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,28 @@
+uuid: 4729ce30-dfd1-464e-99d2-ecec387c6188
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_principal
+    - field.field.block_content.banner_principal.field_imagen_promocional
+    - image.style.banner_panoramico_1440
+  module:
+    - media
+id: block_content.banner_principal.default
+targetEntityType: block_content
+bundle: banner_principal
+mode: default
+content:
+  field_imagen_promocional:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: banner_panoramico_1440
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

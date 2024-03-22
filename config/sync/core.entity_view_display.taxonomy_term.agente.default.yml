@@ -1,0 +1,32 @@
+uuid: 4008825a-c47b-474b-a338-afc45e9a7756
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.agente.field_numero_de_celular
+    - taxonomy.vocabulary.agente
+  module:
+    - text
+id: taxonomy_term.agente.default
+targetEntityType: taxonomy_term
+bundle: agente
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_numero_de_celular:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

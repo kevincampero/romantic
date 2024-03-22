@@ -1,0 +1,20 @@
+uuid: 224fbb7c-8636-43e1-a36f-f4ec6acf44f0
+langcode: es
+status: true
+dependencies:
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: ropitaTheme_primary_admin_actions
+theme: ropitaTheme
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

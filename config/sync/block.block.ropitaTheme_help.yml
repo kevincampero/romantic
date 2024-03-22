@@ -1,0 +1,22 @@
+uuid: b3c0ea8b-6b94-4910-9b61-9ea1f9427605
+langcode: es
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: ropitaTheme_help
+theme: ropitaTheme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

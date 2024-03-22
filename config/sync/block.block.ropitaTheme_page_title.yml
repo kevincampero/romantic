@@ -1,0 +1,20 @@
+uuid: ba4ce1eb-fb10-4d2c-a696-256d1bd5030d
+langcode: es
+status: false
+dependencies:
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: ropitaTheme_page_title
+theme: ropitaTheme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility: {  }

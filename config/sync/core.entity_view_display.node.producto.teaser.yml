@@ -1,0 +1,35 @@
+uuid: c986dc20-8421-41a6-a67f-cb679774807e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.producto.field_agente
+    - field.field.node.producto.field_descripcion_de_producto
+    - field.field.node.producto.field_estacion_relacionada
+    - field.field.node.producto.field_genero_dirigido
+    - field.field.node.producto.field_imagenes_de_producto
+    - field.field.node.producto.field_precio_de_producto
+    - field.field.node.producto.field_tipo_de_vestimenta
+    - node.type.producto
+  module:
+    - user
+id: node.producto.teaser
+targetEntityType: node
+bundle: producto
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_agente: true
+  field_descripcion_de_producto: true
+  field_estacion_relacionada: true
+  field_genero_dirigido: true
+  field_imagenes_de_producto: true
+  field_precio_de_producto: true
+  field_tipo_de_vestimenta: true
+  langcode: true

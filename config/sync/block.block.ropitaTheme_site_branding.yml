@@ -1,0 +1,25 @@
+uuid: 4d07c586-a254-46b8-86f3-5c7cffcb2c4d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: ropitaTheme_site_branding
+theme: ropitaTheme
+region: primary_menu
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

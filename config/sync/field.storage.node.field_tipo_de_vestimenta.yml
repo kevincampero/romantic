@@ -1,0 +1,20 @@
+uuid: 847b7ff5-9c64-4e6e-99d5-2e7d9a5d1e1f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_tipo_de_vestimenta
+field_name: field_tipo_de_vestimenta
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 370d909c-a222-4c37-be37-b694b78fa149
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ropitaTheme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: ropitaTheme_powered
+theme: ropitaTheme
+region: footer
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
