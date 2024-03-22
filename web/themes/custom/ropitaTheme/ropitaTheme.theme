@@ -11,3 +11,18 @@ function ropitaTheme_page_attachments_alter(&$page) {
 
     $page['#attached']['html_head'][] = [$viewport, 'viewport'];
 }
+
+function ropitaTheme_preprocess_node(&$variables) {
+    if ($variables['node']->getType() == 'producto') {
+        $variables['attributes']['class'][] = 'preprocess-product-class';
+    }
+}
+
+function ropitaTheme_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        if ($node->getType() == 'producto') {
+            $suggestions[] = 'node__producto';
+        }
+    }
+}
+

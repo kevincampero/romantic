@@ -75,10 +75,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		a{
+
+		a {
 			color: white;
 			text-decoration: none;
-			&:hover{
+
+			&:hover {
 				text-decoration: underline;
 				color: #d71757;
 			}
@@ -87,9 +89,10 @@
 }
 
 //BANNER PRINCIPAL
-#block-ropitatheme-bannerprincipal{
+#block-ropitatheme-bannerprincipal {
 	margin: 15px 0;
-	div{
+
+	div {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -99,38 +102,40 @@
 //FORMULARIO DE CONTACTO
 .contact-form {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 3.5% 101px;
-    min-height: 69vh;
-  
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 3.5% 101px;
+	min-height: 69vh;
+
 	.field--type-string,
 	.field--type-email,
 	.field--type-list-string {
-	  grid-column: span 1; // Todos los campos excepto el de Mensaje ocupan una columna
+		grid-column: span 1; // Todos los campos excepto el de Mensaje ocupan una columna
 	}
-  
+
 	.field--type-string-long {
-	  grid-column: span 2; // El campo de Mensaje ocupa dos columnas
+		grid-column: span 2; // El campo de Mensaje ocupa dos columnas
 	}
-  	label {
-	  font-weight: bold;
+
+	label {
+		font-weight: bold;
 	}
-  
+
 	input[type="text"],
 	input[type="email"],
 	select,
 	textarea {
-	  width: 100%; // Ajustar el ancho de los campos de texto y de selección
-	  padding: 5px;
-	  margin-top: 5px;
+		width: 100%; // Ajustar el ancho de los campos de texto y de selección
+		padding: 5px;
+		margin-top: 5px;
 	}
-  
+
 	.form-actions {
-	  grid-column: span 2; // El contenedor de los botones ocupa dos columnas
-	  text-align: center; // Centrar los botones
+		grid-column: span 2; // El contenedor de los botones ocupa dos columnas
+		text-align: center; // Centrar los botones
 	}
-	#edit-submit{
+
+	#edit-submit {
 		background-color: #d71757;
 		border-radius: 5px;
 		color: white;
@@ -138,32 +143,70 @@
 		width: 100%;
 		text-transform: uppercase;
 	}
-  }
-  
+}
+
 //PÁGINA DE PRODUCTO
-#product-alone{
+#product-alone {
 	margin: 5% 100px;
-	.layout__region--first{
+
+	.layout__region--first {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		img{
+
+		img {
 			width: 500px;
-   			height: auto;
+			height: auto;
 		}
 	}
-	.layout__region--second{
+
+	.layout__region--second {
 		padding: 15px;
-		span{
+
+		span {
 			color: #232629;
-    		font-size: 25px;
-    		font-weight: bold;
+			font-size: 25px;
+			font-weight: bold;
 		}
-		div{
+
+		div {
 			font-size: 18px;
 			text-align: justify;
 		}
-	 
-		
+
+
+	}
+}
+
+//PRODUCTOS DESTACADOS
+#block-ropitatheme-views-block-productos-destacados-block-1 {
+	margin: 15px 200px;
+	padding: 0 20%;
+
+	h2 {
+		text-align: center;
+	}
+
+	.grid__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.views-field {
+			box-shadow: 0px 5px 15px rgba(0,0,0,.3) !important;
+			width: 500px;
+			height: auto;
+			border: solid 1px;
+			section.field-content.best-products a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					object-fit: cover;
+					width: auto;
+					height: 300px;
+				}
+			}
+		}
 	}
 }
